@@ -20,8 +20,8 @@ su - $USER -c 'id -nG'
 
 sudo chown root:docker /var/run/docker.sock
 
-git config --global user.email "chaitrasradha@gmail.com"
-git config --global user.name "Chaitraradha"
+git config --global user.email "nethravathir1210@gmail.com"
+git config --global user.name "NethravathiR"
 git add .
 git commit -m "backup"
-git push  main
+git push https://github.com/Nethravathi-R/Assignmnt.git main
