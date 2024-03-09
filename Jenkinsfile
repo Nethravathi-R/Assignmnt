@@ -65,7 +65,9 @@ pipeline {
                     sh 'terraform apply -input=false tfplan'
                 }
             }
-            stage('Destroy') {
+        }
+        
+        stage('Destroy') {
             when {
                 expression { params.destroy }
             }
@@ -78,5 +80,4 @@ pipeline {
             }
         }
     }
-}
 }
